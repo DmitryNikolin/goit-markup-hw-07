@@ -1,0 +1,22 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--top-main-bck);
+}
+
+.footer__wrap {
+    display: flex;
+}
+
+.footer .join {
+    margin-top: 15px;
+    margin-left: 70px;
+}
+
+.footer .social {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}

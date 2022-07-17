@@ -1,0 +1,33 @@
+.address {
+    font-style: normal;
+}
+
+.address__link {
+    margin-bottom: 20px;
+}
+
+.address__title {
+    margin-top: 20px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--menu-bck);
+}
+
+.address .address__link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address .address__link:hover,
+.address .address__link:focus {
+    color: var(--accent-color);
+}
+
+.address .address__item+.address__item {
+    margin-top: 9px;
+}

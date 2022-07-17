@@ -1,0 +1,63 @@
+.subscribe {
+    margin-left: auto;
+    padding-top: 12px;
+    color: var(--menu-bck)
+}
+
+.subscribe__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: var(--top-main-bck);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--menu-bck);
+    margin-top: 20px;
+}
+
+.subscribe__input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.subscribe__button {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--menu-bck);
+    padding: 10px 28px;
+    transition-property: color background-color box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__button:hover,
+.subscribe__button:focus {
+    background: var(--button-hover);
+    cursor: pointer;
+}
+
+.subscribe__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--menu-bck);
+}

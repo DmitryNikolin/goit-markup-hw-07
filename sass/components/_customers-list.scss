@@ -1,0 +1,38 @@
+.customers__list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers__list .customers__item {
+    display: flex;
+}
+
+.customers .customers__item+.customers__item {
+    margin-left: 30px;
+}
+
+.customers__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--person-bck);
+    border: 1px solid var(--person-bck);
+    border-radius: 4px;
+    transition-property: color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__link:hover,
+.customers__link:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.customers__icon {
+    width: 106px;
+    height: 60px;
+}
