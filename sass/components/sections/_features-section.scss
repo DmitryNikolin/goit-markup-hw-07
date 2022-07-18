@@ -1,9 +1,18 @@
 .features {
-    padding-top: 94px;
+    @extend %section;
     background: var(--menu-bck);
 }
 
+.features__wrap {
+    @extend %container;
+}
+
+.features__title {
+    @extend %visually-hidden;
+}
+
 .features__list {
+    @extend %list;
     display: flex;
     justify-content: center;
 }
@@ -23,12 +32,9 @@
 }
 
 .features__subtitle {
+    @extend %subtitle;
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
@@ -38,7 +44,7 @@
     color: var(--primary-contact-color);
 }
 
-.features__list .features__item {
+.features__item {
     width: 270px;
 }
 

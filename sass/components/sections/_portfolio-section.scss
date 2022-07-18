@@ -1,5 +1,9 @@
 .portfolio {
-    padding-bottom: 94px;
+    @extend %section;
+}
+
+.portfolio__wrap {
+    @extend %container;
 }
 
 .portfolio__filter {

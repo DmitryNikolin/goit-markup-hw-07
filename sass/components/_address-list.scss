@@ -1,9 +1,6 @@
 .address {
+    @extend %list;
     font-style: normal;
-}
-
-.address__link {
-    margin-bottom: 20px;
 }
 
 .address__title {
@@ -14,18 +11,19 @@
     color: var(--menu-bck);
 }
 
-.address .address__link {
+.address__link {
+    @extend %link;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address .address__link:hover,
-.address .address__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address .address__item+.address__item {

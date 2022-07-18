@@ -5,18 +5,12 @@
 }
 
 .footer__wrap {
-    display: flex;
+    @extend %container;
+    @extend %vertical-centered;
+    align-items: baseline;
 }
 
-.footer .join {
+.join {
     margin-top: 15px;
     margin-left: 70px;
-}
-
-.footer .social {
-    display: flex;
-    width: 206px;
-    height: 44px;
-    margin-left: auto;
-    margin-right: auto;
 }

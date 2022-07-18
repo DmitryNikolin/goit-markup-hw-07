@@ -1,6 +1,5 @@
 .hero {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -12,6 +11,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.hero__wrap {
+    @extend %container;
 }
 
 .hero__title {

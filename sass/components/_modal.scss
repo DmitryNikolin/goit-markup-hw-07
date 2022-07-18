@@ -42,12 +42,11 @@
     position: relative;
     width: 100%;
     margin-bottom: 10px;
-}
-
-.modal__field:focus-within>.modal__icon,
-.modal__field:hover>.modal__icon,
-.modal__field:focus>.modal__icon {
-    fill: var(--accent-color);
+    &:focus-within>.modal__icon,
+    &:hover>.modal__icon,
+    &:focus>.modal__icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal__icon {
@@ -63,6 +62,7 @@
 }
 
 .modal__input {
+    @extend %input;
     width: 100%;
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -70,19 +70,19 @@
     padding-left: 42px;
     color: var(--primary-contact-color);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__input:focus-within,
-.modal__input:hover,
-.modal__input:focus {
-    cursor: pointer;
-    outline: none;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    &:focus-within,
+    &:hover,
+    &:focus {
+        @extend %input;
+        cursor: pointer;
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .modal__comment {
+    @extend %input;
     display: block;
     width: 100%;
     min-height: 120px;
@@ -93,20 +93,18 @@
     margin: 0;
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__comment:focus-within,
-.modal__comment:hover,
-.modal__comment:focus {
-    cursor: pointer;
-    outline: none;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
-
-.modal__comment::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    &:focus-within,
+    &:hover,
+    &:focus {
+        @extend %input;
+        cursor: pointer;
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .checkbox__label {
@@ -182,10 +180,9 @@
     transition-property: color background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.send:hover {
-    background-color: var(--button-hover);
+    &:hover {
+        background-color: var(--button-hover);
+    }
 }
 
 .modal__icon-close {
@@ -212,11 +209,10 @@
     cursor: pointer;
     background-color: inherit;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__button-close:hover,
-.modal__button-close:focus {
-    box-shadow: none;
-    background-color: var(--menu-bck);
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        background-color: var(--menu-bck);
+        color: var(--accent-color);
+    }
 }

@@ -4,7 +4,13 @@
     color: var(--menu-bck)
 }
 
+.subscribe__title {
+    @extend %subtitle;
+    margin-bottom: 20px;
+}
+
 .subscribe__input {
+    @extend %input;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -18,11 +24,11 @@
     border-radius: 4px;
     color: var(--menu-bck);
     margin-top: 20px;
-}
-
-.subscribe__input:focus {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    outline: none;
+    &:focus,
+    &:hover {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        outline: none;
+    }
 }
 
 .subscribe__button {
@@ -46,12 +52,11 @@
     transition-property: color background-color box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe__button:hover,
-.subscribe__button:focus {
-    background: var(--button-hover);
-    cursor: pointer;
+    &:hover,
+    &:focus {
+        background: var(--button-hover);
+        cursor: pointer;
+    }
 }
 
 .subscribe__icon {
