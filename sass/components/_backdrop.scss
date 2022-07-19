@@ -9,14 +9,6 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.visually-hidden {
-    @extend %visually-hidden;
-}
-
-.is-hidden {
-    @extend %is-hidden;
-}
-
 .backdrop.is-hidden .modal {
     position: absolute;
     top: 50%;

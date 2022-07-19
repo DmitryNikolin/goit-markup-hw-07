@@ -69,7 +69,7 @@ ul {
   padding-bottom: 94px;
 }
 
-.contacts__link, .nav, .footer__wrap, .header__flex, .header__wrap {
+.contacts__link, .nav, .footer__wrap, .header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +156,7 @@ body {
 
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -320,11 +321,6 @@ body {
           align-items: baseline;
 }
 
-.join {
-  margin-top: 15px;
-  margin-left: 70px;
-}
-
 .portfolio__filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,7 +436,7 @@ body {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: -33px;
+  bottom: -34px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
@@ -450,14 +446,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 300px;
+  margin-left: auto;
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .contacts__link {
+  color: var(--primary-contact-color);
   -webkit-transition-property: color fill;
   transition-property: color fill;
   -webkit-transition-duration: 250ms;
@@ -540,7 +537,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
   color: inherit;
   fill: var(--menu-bck);
   -webkit-box-align: center;
@@ -647,10 +643,12 @@ body {
 }
 
 .info {
-  margin-right: 86px;
+  margin: 0;
 }
 
 .join {
+  margin-top: 15px;
+  margin-left: 70px;
   margin-right: auto;
 }
 
@@ -684,7 +682,6 @@ body {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--menu-bck);
-  margin-top: 20px;
 }
 .subscribe__input:focus, .subscribe__input:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);

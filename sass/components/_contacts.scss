@@ -1,16 +1,17 @@
 .contacts {
     @extend %list;
     display: flex;
-    margin-left: 300px;
+    margin-left: auto;
 }
 
 .contacts__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .contacts__link {
     @extend %vertical-centered;
     @extend %link;
+    color: var(--primary-contact-color);
     transition-property: color fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
